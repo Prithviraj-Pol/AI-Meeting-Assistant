@@ -1,0 +1,6 @@
+{
+  "name": "MeetMind AI",
+  "description": "Premium MeetMind AI for recording, transcribing, speaker diarization, summary generation, task extraction, calendar syncing, and RAG-based search and chat.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

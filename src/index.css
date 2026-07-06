@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* 
+  =========================================
+  GEOMETRIC BALANCE DESIGN THEME OVERRIDES
+  =========================================
+*/
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8F9FA !important;
+  color: #111827 !important;
+}
+
+/* Core backgrounds override */
+.bg-\[\#0b0f19\] {
+  background-color: #F8F9FA !important;
+}
+
+/* Sidebar background and border */
+aside.bg-\[\#0f172a\]\/70,
+aside.bg-\[\#0f172a\]\/40,
+aside {
+  background-color: #ffffff !important;
+  border-right: 1px solid #e2e8f0 !important;
+}
+
+/* Card overrides: map slate-900/40, slate-900/50, etc to crisp white cards */
+.bg-slate-900\/40,
+.bg-slate-900\/50,
+.bg-slate-900,
+.bg-[#0f172a],
+.bg-slate-900\/15 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Modals and panels */
+.glass-panel,
+.glass-panel-light {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Inputs and textareas */
+.bg-slate-950,
+.bg-slate-950\/60,
+.bg-slate-950\/50,
+input,
+select,
+textarea {
+  background-color: #F9FAFB !important;
+  border-color: #e2e8f0 !important;
+  color: #111827 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Borders */
+.border-white\/5,
+.border-white\/10,
+.border-white\/20,
+.border-white\/30,
+.border-violet-500\/10,
+.border-violet-500\/15,
+.border-violet-500\/30,
+.border-violet-500\/40,
+.border-blue-500\/20,
+.border-emerald-500\/20,
+.border-amber-500\/20,
+.border-red-500\/20 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Text overrides - Dark mode light text to rich dark text */
+.text-white,
+.text-slate-100,
+.text-slate-200 {
+  color: #111827 !important;
+}
+
+.text-slate-300,
+.text-slate-400 {
+  color: #374151 !important;
+}
+
+.text-slate-500 {
+  color: #6b7280 !important;
+}
+
+/* Text gradient text mask overrides for white-to-slate text */
+.from-white.bg-clip-text,
+.via-slate-100.bg-clip-text {
+  background-image: none !important;
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important;
+}
+
+/* Highlight elements */
+.text-violet-400,
+.text-violet-300 {
+  color: #4f46e5 !important; /* Indigo accent */
+}
+
+/* Badge colors */
+.bg-violet-600\/20,
+.bg-violet-950\/15,
+.bg-violet-950\/10,
+.bg-violet-500\/10 {
+  background-color: #f5f3ff !important;
+  color: #4f46e5 !important;
+}
+
+.bg-blue-500\/10,
+.bg-blue-600\/10,
+.bg-blue-950\/20 {
+  background-color: #eff6ff !important;
+  color: #2563eb !important;
+}
+
+.bg-emerald-500\/10,
+.bg-emerald-950\/20 {
+  background-color: #ecfdf5 !important;
+  color: #059669 !important;
+}
+
+.bg-amber-500\/10 {
+  background-color: #fffbeb !important;
+  color: #d97706 !important;
+}
+
+.bg-red-500\/10 {
+  background-color: #fef2f2 !important;
+  color: #dc2626 !important;
+}
+
+/* Sidebar navigation buttons */
+nav button.text-slate-400,
+nav button.text-slate-500 {
+  color: #4b5563 !important;
+}
+
+nav button.text-slate-400:hover,
+nav button:hover {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+/* Active sidebar nav item: indigo-50 background with indigo-700 text */
+nav button.bg-violet-600,
+nav button.bg-purple-900 {
+  background-color: #e0e7ff !important;
+  color: #4338ca !important;
+  box-shadow: none !important;
+}
+
+/* Standard Buttons: primary button is indigo */
+.bg-gradient-to-r,
+.bg-gradient-to-tr,
+.bg-violet-600 {
+  background-image: none !important;
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+}
+
+.bg-gradient-to-r:hover,
+.bg-gradient-to-tr:hover,
+.bg-violet-600:hover {
+  background-color: #4338ca !important;
+}
+
+/* Sync status or active highlights */
+.bg-emerald-500 {
+  background-color: #10b981 !important;
+}
+
+.text-emerald-400 {
+  color: #059669 !important;
+}
+
+.text-green-400 {
+  color: #16a34a !important;
+}
+
+.text-blue-400 {
+  color: #2563eb !important;
+}
+
+/* Background ambience glow - hide for geometric balance theme to keep background clean */
+.absolute.top-1\/4.left-1\/4 {
+  display: none !important;
+}
+
+/* Scrollbar styling for light mode */
+::-webkit-scrollbar-track {
+  background: #f1f5f9 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8 !important;
+}
+
+/* Custom animation classes */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+  }
+}
+
+.recording-pulse {
+  animation: pulse-ring 2s infinite;
+}

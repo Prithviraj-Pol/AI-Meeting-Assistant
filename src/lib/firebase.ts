@@ -1,0 +1,20 @@
+import { initializeApp, getApps, getApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+
+const firebaseConfig = {
+  projectId: "vast-moonlight-7nzsc",
+  appId: "1:430203917700:web:ef082cb3ffe050b874f9d1",
+  apiKey: "AIzaSyCdRg76ZOQO2QtqnpT1BCPxmVXtES54-JA",
+  authDomain: "vast-moonlight-7nzsc.firebaseapp.com",
+  firestoreDatabaseId: "ai-studio-aimeetingassista-e73d2171-0551-4df0-86dc-bd2db0434b83",
+  storageBucket: "vast-moonlight-7nzsc.firebasestorage.app",
+  messagingSenderId: "430203917700"
+};
+
+// Initialize Firebase
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+export { app, auth, db };
